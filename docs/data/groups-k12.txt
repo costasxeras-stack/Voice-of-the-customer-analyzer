@@ -1,0 +1,72 @@
+#10 n=1156 unhappy 21.5% happy 4.2% | fabric, quality fabric, lace, fabric quality, stitching, knit, sleeves, fabric cheap, fabric soft
+     - The top fits nice, but after one wear (didn't even washed it) the fabric was all fuzzy.
+     - the fabric is gorgeous, but the fit was very unflattering.
+     - the elastic top fit well (32b) but then from there it was too much fabric.
+     - in addition, the fabric was more sheer than it looks in the picture and the v-neck in front dipped a little lower, too.
+     - the fabric is stiffer that i expected, and therefore it doesn't drape nicely on the shoulders and through the torso.
+#1 n=1207 unhappy 20.2% happy 6.4% | waist, torso, hips, boobs, waisted, bra, lbs, chest, thighs
+     - it was very boxy on me and tied at the waist, made my upper half look huge.
+     - my regular size 4 was too tight in the shoulders, the fabric didn't drop off the shoulders like it does on the model.
+     - the waist was too high for my liking, and the leg openings were too big and gave me a stumpified look.
+     - the waist was way too small for my body shape and even if i sized up, i could tell they would still be tight in the wais
+     - the arm holes were a bit too big, the waist was too wide and it overall looked like a bib on me.
+#11 n=895 unhappy 16.5% happy 3.4% | wanted work, disappointed, oh, good way, didn work, win, disappointment, bummed, recommend
+     - i was a bit disappointed.
+     - just what i had hoped it would be.
+     - i'm kinda disappointed.
+     - i'm very disappointed.
+     - i'm pretty disappointed.
+#2 n=858 unhappy 14.9% happy 3.9% | model, looks, looks kind, misleading, model probably, doesn look, pic, looks like, like picture
+     - this top has no shape and is way big.
+     - it looks a bit flat on top on the model.
+     - looks exactly like on the model but the cut made me feel wide.
+     - this top has absolutely no shape to it.
+     - it has no shape so it is not flattering to the figure.
+#9 n=836 unhappy 14.8% happy 3.5% | ran little, ran, just big, looked big, comical, billowed, unfortunately fit, bust area, clingy
+     - the extra small was too tight in the shoulders and didn't have the right look to it.
+     - it was too big around, in the middle, yet tighter at the bottom.
+     - It was just too big in the regular size and too short in petite.
+     - plus, it was a little short in the front.
+     - it was perfectly form fitted and the perfect length.
+#6 n=903 unhappy 14.6% happy 4.0% | dress, love dress, dress looked, dress just, like dress, ordered dress, dress looks, return dress, dress didn
+     - Well - i was disappointed in the fabric for this dress.
+     - This is a beautiful dress, but the fit was strange.
+     - I thought this dress was very cute on the model, however it was way too tight across the chest for me.
+     - The dress had great potential, but the top sagged and made the dress look unflattering on me.
+     - This dress was ok - i thought the fabric was soft, but not my favorite.
+#3 n=795 unhappy 14.0% happy 3.2% | shirt, sweater, jacket, sweaters, shirts, bought shirt, white shirt, tee, tees
+     - I had hopes for this shirt but was disappointed in the fabric...it's very stiff and heavy for a summer blouse.
+     - the fabric was substantial and of a high quality, but unfortunately in this design, that became a bad thing as the botto
+     - I loved the cut and style of this shirt, so was very disappointed when i put it on and it was very tight and slightly se
+     - While i love the design, this sweater even in the small is too over-sized for me and was unflattering.
+     - While the fabric, embroidery and sizing are dead on, i just couldn't deal with the shiny little mirrors that the designe
+#7 n=748 unhappy 12.6% happy 4.3% | price, reviews, ordered, ordered online, retailer, worth price, read reviews, worth, review
+     - I ordered a size up after reading the reviews, but i wouldn't of had to.
+     - i had high hopes when i ordered it, but was surprised by the poor quality and cheap materials when it arrived.
+     - i bought it and was instantly disappointed when i took it out of the bag.
+     - i sent this back to the store as it didn't seem fit even at the low price.
+     - i ordered a medium, should have ordered a small.
+#8 n=536 unhappy 10.2% happy 2.1% | color, colors, blue, muted, pink, color pretty, faded, color just, bright
+     - the colors are gorgeous and it appeared well made, but the design was awful.
+     - i felt the color scheme was very plain.
+     - Looks great on the picture but when it arrived it was a great disappointment, both the colors and style.
+     - there is a tinge of green-yellow to the background fabric and the color did not look good on me.
+     - I saw the colors and texture of this top and wanted to love it however when i put it on it just did not work.
+#0 n=566 unhappy 9.5% happy 2.6% | wash, dry, instructions, washing, washed, itchy, smell, dried, cold
+     - but i washed it once on delicate and line dried (which i do with most of my shirts) and it came out riddled in holes.
+     - after the third time i wore it, i discovered a large hole in the armpit, most likely due to the excessive washing.
+     - but then i washed it (laid flat to dry) and it shrunk so much that it's unwearable now.
+     - however, i only got to wear it one time because after the first wash, a giant fabric tear happened on one of the seams.
+     - i even washed it to see if it would shrink to fit and it was better but not good enough.
+#4 n=399 unhappy 8.6% happy 1.0% | returned, return, returning item, unfortunately return, send, returning, going return, sent, sending
+     - sadly, i had to return it.
+     - sadly, i had to return it.
+     - sadly i had to return it.
+     - sadly i had to return it.
+     - sadly i had to return it.
+#5 n=375 unhappy 8.3% happy 0.8% | sadly going, going, goes, say going, definitely going, went, unfortunately going, going store, going asap
+     - it's unfortunately going back.
+     - this is going back i'm afraid.
+     - it's going back.
+     - it's going back.
+     - it's going back.

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice of the Customer Analyzer</title>
+<meta name="description" content="What makes shoppers say they would not recommend a product? 8,201 real clothing reviews, grouped by complaint with a local AI model.">
+<meta name="theme-color" content="#f6f5f8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23be185d'/%3E%3Cpath d='M8 11h16v8H14l-4 4v-4H8z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f5f8; --card:#fff; --ink:#18161d; --muted:#5d5866; --faint:#8b8695; --line:#e6e3ec;
+  --accent:#be185d; --accent-soft:#fdeef5; --happy:#0f766e; --happy-soft:#e3f3f1; --mixed:#94a3b8;
+  --display:"Instrument Serif",Georgia,serif; --body:"Manrope",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+h1,h2{font-family:var(--display);font-weight:400;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:#fff}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;height:60px}
+.brand{white-space:nowrap;font-weight:700;font-size:17px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:22px;height:22px;border-radius:6px;background:var(--accent);display:inline-block}
+.top nav{display:flex;gap:18px;font-size:14.5px}
+.top nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+.intro{padding:40px 0 24px}
+.ver{font:600 12.5px var(--body);color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:999px}
+.intro h1{font-size:clamp(34px,5vw,56px);line-height:1.04;margin-top:14px;max-width:20ch}
+.intro p{color:var(--muted);font-size:18px;max-width:68ch;margin:16px 0 0}
+section.block{margin-top:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h2{font-size:32px;line-height:1.1}
+.sub{color:var(--muted);font-size:15px;margin:8px 0 0;max-width:72ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.stat b{display:block;font:400 48px/1 var(--display)}
+.stat span{display:block;color:var(--muted);font-size:14.5px;margin-top:8px}
+.stat small{display:block;color:var(--faint);font-size:13px;margin-top:6px}
+.ctl{display:flex;gap:10px 18px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;font:600 13.5px var(--body);color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}
+.chk{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.rank{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.rank li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px 12px;align-items:start}
+.rank .num{font:400 24px/1 var(--display);color:var(--faint);padding-top:2px}
+.rank .head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.rank .head b{font-size:15.5px}
+.rank .head span{font-size:13.5px;color:var(--muted);white-space:nowrap}
+.rank .desc{grid-column:2;font-size:13.5px;color:var(--faint);margin-top:-2px}
+.bars{grid-column:2;display:grid;gap:3px}
+.bar{height:10px;border-radius:5px;background:#efedf3;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:5px;background:#eef0f4;color:var(--muted);margin-left:6px;vertical-align:2px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-top:14px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:14px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hl td{background:var(--accent-soft)}
+select{padding:9px 11px;border:1px solid var(--line);border-radius:9px;font:15px var(--body);background:#fff;color:var(--ink);max-width:100%}
+.quotes{display:grid;gap:10px;margin-top:14px}
+.quote{border-left:3px solid var(--accent);background:#fbfafc;border-radius:0 10px 10px 0;padding:12px 14px}
+.quote p{margin:0;font-size:15px}
+.quote small{display:block;color:var(--faint);font-size:12.5px;margin-top:6px}
+.btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;font:600 14px var(--body);cursor:pointer;margin-top:12px}
+.note{font-size:13.5px;color:var(--faint);margin-top:12px}
+footer{margin:44px 0 0;border-top:1px solid var(--line);background:#fff}
+footer .wrap{padding:22px 20px 34px;font-size:13.5px;color:var(--muted);display:grid;gap:6px}
+@media (max-width:760px){.stats{grid-template-columns:1fr}.card{padding:18px}.card h2{font-size:28px}.intro p{font-size:16.5px}.top nav a.hide-sm{display:none}}
+@media (max-width:420px){.brand{font-size:15px}.top nav{gap:12px;font-size:13.5px}th,td{padding:9px 5px;font-size:13.5px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><i aria-hidden="true"></i>Voice of the Customer</a>
+    <nav>
+      <a href="https://github.com/costasxeras-stack/Voice-of-the-customer-analyzer/blob/main/docs/case-study.md">Case study</a>
+      <a class="hide-sm" href="https://github.com/costasxeras-stack/Voice-of-the-customer-analyzer">GitHub</a>
+      <a href="https://kostasxeras.com/">Portfolio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <span class="ver">v0.1.0</span>
+    <h1>Why do shoppers say they would not recommend a product?</h1>
+    <p>Real reviews from a women's clothing shop, where every reviewer also said whether they would recommend the item. A local AI model found the sentences that sound like a "would not recommend" review, and grouped them by complaint. Each theme is ranked by how much more often it appears in unhappy reviews than in happy ones.</p>
+  </section>
+
+  <section class="block stats" id="stats" aria-label="Headline results"></section>
+
+  <section class="block card">
+    <h2>What to fix first</h2>
+    <p class="sub">Share of reviews with at least one complaint sentence in each theme. Pink is reviews that would not recommend the item, green is a random sample of the same number that would.</p>
+    <div class="ctl">
+      <div class="seg" role="group" aria-label="Department" id="dept"></div>
+      <label class="chk"><input type="checkbox" id="show-all"> Show outcomes and mixed groups</label>
+    </div>
+    <ol class="rank" id="rank"></ol>
+    <div class="legend"><span><i class="dot" style="background:var(--accent)"></i>Would not recommend</span><span><i class="dot" style="background:var(--happy)"></i>Would recommend</span></div>
+    <p class="note" id="dept-note"></p>
+  </section>
+
+  <section class="block card">
+    <h2>Why counting keywords points the wrong way</h2>
+    <p class="sub">The theme list a PM would write up front, counted by keyword on the same reviews. Keywords cannot tell "fits perfectly" from "does not fit", so the biggest problem looks like a non-issue.</p>
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>Keyword theme</th><th class="n">Would not recommend</th><th class="n">Would recommend</th><th class="n">Ratio</th></tr></thead>
+      <tbody id="kw"></tbody>
+    </table></div>
+  </section>
+
+  <section class="block card">
+    <h2>Read the complaints</h2>
+    <p class="sub">Random sentences from each theme, exactly as written. Some are not complaints: the grouping is not perfect, and this is where you can see it. A few stop mid-word because the original data cuts reviews at about 500 characters.</p>
+    <div class="ctl"><label class="chk" for="theme">Theme</label><select id="theme"></select></div>
+    <div class="quotes" id="quotes"></div>
+  </section>
+
+  <p class="note" id="method"></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Built by <a href="https://kostasxeras.com/">Konstantinos Xeras</a> with Claude (Anthropic) as engineering partner. <a href="https://github.com/costasxeras-stack/Voice-of-the-customer-analyzer">Code and data on GitHub</a>.</span>
+    <span>Data: Women's E-Commerce Clothing Reviews, public domain (CC0). The retailer's name is removed in the original data. Theme names were written by Claude during the build, from each group's top words and example sentences.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var pct = function (x) { return (x * 100).toFixed(x < 0.1 ? 1 : 0) + '%'; };
+  var D, dept = '', all = false;
+  var DEPTS = ['', 'Tops', 'Dresses', 'Bottoms', 'Intimate', 'Jackets'];
+  var KIND = { cause: '', mixed: 'Mixed', outcome: 'Outcome' };
+
+  fetch('data/themes.json').then(function (r) { return r.json(); }).then(function (d) { D = d; init(); })
+    .catch(function () { $('stats').innerHTML = '<div class="stat">The data could not load. Refresh the page.</div>'; });
+
+  function init() {
+    var U = D.n_unhappy, H = D.n_happy, f = D.combined.fit, fab = D.themes.filter(function (t) { return t.key === 'fabric'; })[0];
+    var kwFit = D.keywords.filter(function (k) { return k.name === 'Fit and sizing'; })[0];
+    $('stats').innerHTML =
+      stat(pct(f.unhappy / U), 'of unhappy reviews complain about fit', 'Against ' + pct(f.happy / H) + ' of happy reviews. The biggest cause.') +
+      stat(pct(fab.unhappy / U), 'complain about fabric or quality', 'Against ' + pct(fab.happy / H) + ' of happy reviews.') +
+      stat((kwFit.unhappy / U / (kwFit.happy / H)).toFixed(2) + '×', 'how often "fit" words appear in unhappy reviews compared with happy ones', 'Keyword counting makes fit look like a non-issue.');
+    $('dept').innerHTML = DEPTS.map(function (d) { return '<button data-d="' + d + '" aria-pressed="' + (d === '') + '">' + (d || 'All') + '</button>'; }).join('');
+    $('dept').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; dept = b.dataset.d; $('dept').querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); rank(); });
+    $('show-all').addEventListener('change', function (e) { all = e.target.checked; rank(); });
+    rank();
+    $('kw').innerHTML = D.keywords.slice().sort(function (a, b) { return b.unhappy / b.happy - a.unhappy / a.happy; }).map(function (k) {
+      var r = (k.unhappy / U) / (k.happy / H);
+      return '<tr' + (k.name === 'Fit and sizing' ? ' class="hl"' : '') + '><td>' + esc(k.name) + '</td><td class="n">' + pct(k.unhappy / U) + '</td><td class="n">' + pct(k.happy / H) + '</td><td class="n">' + r.toFixed(2) + '×</td></tr>';
+    }).join('');
+    $('theme').innerHTML = D.themes.map(function (t, i) { return '<option value="' + i + '">' + esc(t.name) + (KIND[t.kind] ? ' (' + KIND[t.kind].toLowerCase() + ')' : '') + '</option>'; }).join('');
+    $('theme').addEventListener('change', quotes);
+    quotes();
+    $('method').textContent = 'Method: ' + U.toLocaleString('en') + ' reviews that would not recommend the item and ' + H.toLocaleString('en') + ' random reviews that would, split into ' + D.sentences.toLocaleString('en') + ' sentences. A model trained on other reviews scored each sentence. The ' + D.complaint_sentences.toLocaleString('en') + ' sentences scoring ' + D.threshold + ' or more were grouped into 12 groups, merged into the themes above. All reviews in the data: ' + D.all.reviews.toLocaleString('en') + ', of which ' + D.all.unhappy.toLocaleString('en') + ' would not recommend.';
+  }
+  function stat(big, text, small) { return '<div class="stat"><b>' + big + '</b><span>' + text + '</span><small>' + small + '</small></div>'; }
+
+  function rank() {
+    var U = D.n_unhappy, H = D.n_happy;
+    var list = D.themes.filter(function (t) { return all || t.kind === 'cause'; }).map(function (t) {
+      var u = dept ? t.by_dept[dept].k / t.by_dept[dept].n : t.unhappy / U;
+      return { t: t, u: u, h: t.happy / H };
+    }).sort(function (a, b) { return b.u - a.u; });
+    var max = Math.max.apply(null, list.map(function (x) { return Math.max(x.u, dept ? 0 : x.h); }));
+    $('rank').innerHTML = list.map(function (x, i) {
+      var t = x.t;
+      return '<li><span class="num">' + (i + 1) + '</span><div><div class="head"><b>' + esc(t.name) + (KIND[t.kind] ? '<span class="tag">' + KIND[t.kind] + '</span>' : '') + '</b><span>' + pct(x.u) + (dept ? '' : ' against ' + pct(x.h) + ', ' + (x.u / x.h).toFixed(1) + '×') + '</span></div></div>' +
+        '<div class="desc">' + esc(t.desc) + '</div><div class="bars"><div class="bar"><i style="width:' + (x.u / max * 100) + '%;background:var(--accent)"></i></div>' +
+        (dept ? '' : '<div class="bar"><i style="width:' + (x.h / max * 100) + '%;background:var(--happy)"></i></div>') + '</div></li>';
+    }).join('');
+    var n = dept ? D.themes[0].by_dept[dept].n : 0;
+    $('dept-note').textContent = dept ? dept + ': ' + n.toLocaleString('en') + ' reviews that would not recommend. Happy reviews are not split by department, so only the pink bars are shown.' : '';
+  }
+
+  function quotes() {
+    var t = D.themes[+$('theme').value];
+    $('quotes').innerHTML = '<p class="sub" style="margin:0">' + esc(t.desc) + '</p>' + t.examples.map(function (e) {
+      return '<div class="quote"><p>' + esc(e.t) + '</p><small>Review ' + e.id + ' · ' + e.rating + ' stars · ' + esc(e.dept) + ' · ' + (e.rec ? 'would recommend' : 'would not recommend') + '</small></div>';
+    }).join('');
+  }
+})();
+</script>
+</body>
+</html>
