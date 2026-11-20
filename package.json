@@ -1,0 +1,21 @@
+{
+  "name": "voice-of-the-customer-analyzer",
+  "version": "0.1.0",
+  "description": "Why do shoppers say they would not recommend a product? Real clothing reviews grouped by complaint with a local AI model.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sentences": "python3 scripts/1-split-sentences.py",
+    "embed": "node scripts/2-embed.mjs",
+    "model": "python3 scripts/3-complaint-model.py",
+    "group": "python3 scripts/4-group-complaints.py 12 > docs/data/groups-k12.txt",
+    "data": "python3 scripts/5-build-data.py",
+    "serve": "python3 -m http.server 8000"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@energetic-ai/core": "^0.2.0",
+    "@energetic-ai/embeddings": "^0.2.0",
+    "@energetic-ai/model-embeddings-en": "^0.2.0"
+  }
+}

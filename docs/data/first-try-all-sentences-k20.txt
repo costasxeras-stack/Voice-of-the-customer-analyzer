@@ -1,0 +1,80 @@
+#14 n=2042 unhappy 30.9% happy 9.7% lift 3.20 | looked like, looked, did lay, clung, cut wide, hung, felt, liked length
+     - the extra small was too tight in the shoulders and didn't have the right look to it.
+     - it was too tight across the chest and had too much fabric around the bottom.
+     - it was too big around, in the middle, yet tighter at the bottom.
+#19 n=789 unhappy 16.6% happy 2.3% lift 7.25 | returning, sending, return, sadly return, returned, returning item, ll returning, say going
+     - i am returning it.
+     - i am returning it.
+     - i am returning it.
+#6 n=1352 unhappy 19.7% happy 9.4% lift 2.08 | laughed, wish worked, disappointed, wanted work, didn work, disappointment, disappointed really, disappointed received
+     - just what i had hoped it would be.
+     - i was a bit disappointed.
+     - i wanted to love it.
+#16 n=1975 unhappy 23.8% happy 18.2% lift 1.31 | bra, wear bra, strapless bra, nude bra, bra straps, strapless, waist, bras
+     - i like my dresses to fit and could have gone with the 0 - it fit well at the waist but was tighter than i pref
+     - i was afraid the tie at the front would emphasize my slight tummy, but to the contrary, the skirt is flatterin
+     - the dress fit me perfect in the front however there were so much extra fabric in the back that it made me look
+#0 n=2490 unhappy 28.0% happy 22.6% lift 1.24 | sleeves, sleeve, sleeves long, sewn, pushed, excess fabric, dolman, sleeves tight
+     - it's a very loose fit throughout the body, but the shoulders, arms, and neckline remain true to size so it loo
+     - the fabric twists as it goes over the shoulders to the back....it is quite bulky.
+     - in the front part of the blouse the fabric is relatively short, but the sleeves have so much excess fabric it 
+#2 n=1215 unhappy 14.9% happy 11.9% lift 1.25 | price, sale price, sale, worth, worth price, worth money, happy purchase, reviews
+     - for this price point, i would have expected better quality.
+     - i might justify this one at a sale price.
+     - i wouldn't pay full price for this, but it's a nice top at the sale price.
+#13 n=1941 unhappy 21.4% happy 19.0% lift 1.13 | runs, runs really, does run, runs true, shorter appears, runs large, person model, better model
+     - it runs a tad large, but that is part of the style.
+     - it is too wide and not long enough.
+     - the shape is good with the pleating.
+#8 n=1782 unhappy 19.4% happy 17.5% lift 1.11 | taller, curves, slender, women, larger chest, legs, body types, small hips
+     - doesn't look to wide on my top heavy torso and the sleeves don't cling to my chubby upper arms or tummy.
+     - there is a hi-lo hem going on that doesn't flatter my legs but it looks fantastic from the side.
+     - but the waist and upper body fit tightly.
+#18 n=1637 unhappy 17.8% happy 17.0% lift 1.05 | highly recommend, highly, recommend, title says, definitely recommend, sadly going, hope, undecided
+     - on me, not quite.
+     - it's a bit on th
+     - this is not quite it.
+#12 n=1625 unhappy 16.4% happy 16.3% lift 1.01 | dry, washing, instructions, wash, itchy, cold water, washed, dry clean
+     - the fabric is like a washed cotton.....very soft.
+     - the fabric is soft and it does have some give.
+     - i haven't washed it yet but the fabric seems to be sturdy.
+#10 n=2907 unhappy 24.8% happy 24.9% lift 1.00 | dress, love dress, dress beautiful, beautiful dress, loved dress, saw dress, bought dress, dress online
+     - I love this dress as far as the fit goes.
+     - This is a beautiful dress, but the fit was strange.
+     - this dress was very pretty out of the package but its a lot of dress.
+#11 n=1653 unhappy 16.9% happy 17.3% lift 0.98 | love shirt, shirt, love sweater, sweater, love jacket, bought shirt, loved shirt, shirt just
+     - I love the fit and feel of this shirt.
+     - Okay this shirt is soooo comf.
+     - The fabric on this shirt was beautifully woven and so soft/cozy.
+#15 n=1910 unhappy 19.4% happy 20.6% lift 0.94 | ordered online, store, local, local retailer, mail, saw store, ordered, service
+     - i got it in the blue and sized down from a small to extra small- although i ordered both to see.
+     - I ordered this online, and took it back the day i got it.
+     - I ordered this online and was disappointed with the fit when it arrived.
+#17 n=1476 unhappy 15.5% happy 19.0% lift 0.82 | lbs, reference, 120, 130, 140, 130 lbs, 125, 135
+     - i am 5'2" and about 107lbs, size 0 fit well.
+     - i'm 5'0, 110 lbs and the 26 fit me perfectly.
+     - i am 5'4" and 115 lbs, and i got the small.
+#3 n=2465 unhappy 25.0% happy 29.0% lift 0.86 | embroidery, fabric nice, quality fabric, fabric, nice fabric, beautiful fabric, great layering, fabric great
+     - the fabric is great and the colors are rich and lovely.
+     - i love the feel of the blouse, the fabric is a nice quality.
+     - I love the colors and style of this poncho, however, the fabric is a total miss.
+#7 n=1763 unhappy 10.9% happy 17.3% lift 0.63 | pants, love pants, jeans, pair, love jeans, pairs, pilcro, shorts
+     - often pants are too loose in the ankle for me, but these are snug and perfect to wear with booties.
+     - These jeans are so comfortable and they are made of the softest fabric.
+     - I found these jeans to be more fitted than slouchy.
+#9 n=1905 unhappy 15.0% happy 24.1% lift 0.62 | color, colors, pink, blue, green, brighter, red, blue color
+     - I bought the color "black motif"although the markings look more dark purple and are similar to tie dyed colori
+     - the color is lovely, more of a grayish blue, and the design is nice.
+     - I purchased the blue color and it's gorgeous.
+#1 n=2846 unhappy 24.2% happy 33.4% lift 0.73 | size, ordered size, sizes, usual size, sizing, size small, normal size, usual
+     - i ordered a size small even though i normally wear an xs in all tops.
+     - I ordered a small and it is enormous; i usually wear a size 10.
+     - i bought a size medium and it fit perfectly.
+#5 n=2204 unhappy 14.5% happy 31.0% lift 0.47 | love piece, cute, cuter, overall cute, prettier, love love, cute flattering, prettier person
+     - I love the style of this top.
+     - I love the style of this top.
+     - I love the look of this top.
+#4 n=2089 unhappy 11.6% happy 31.0% lift 0.37 | dressed, wait wear, boots, wear, sandals, time wear, compliments time, casual
+     - I love this top, i dress it up when i need to be more professional and i dress it down with a pair of cutoffs 
+     - i love to wear it to work with a dress pant as well as with jeans on the weekends.
+     - i have worn it with a skirt for work and skinny jeans.
