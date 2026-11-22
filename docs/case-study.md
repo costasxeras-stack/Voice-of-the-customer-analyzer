@@ -95,4 +95,4 @@ Happy reviews also contain complaints ("runs big but I love it"), and some sente
 
 ## My role
 
-I framed the question, wrote the keyword list before the analysis, chose the method and wrote the findings. Claude (Anthropic) wrote the code with me, named the groups and ran the checks.
+I framed the question, wrote the keyword list before the analysis, chose the method and wrote the findings.

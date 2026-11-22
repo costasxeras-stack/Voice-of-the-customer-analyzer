@@ -45,9 +45,9 @@ Full detail in the [case study](docs/case-study.md).
 
 [Women's E-Commerce Clothing Reviews](https://www.openml.org/d/43673), 23,486 reviews, public domain (CC0). The retailer's name is replaced with "retailer" in the original data. The copy used here was downloaded from a public GitHub mirror. Reviews are cut at about 500 characters in the original data, so some quotes stop mid-word.
 
-## How it was built
+## My role
 
-I framed the question, wrote the keyword list, chose the method and wrote the findings. Claude (Anthropic) was my engineering partner for the code and named the groups. Decisions are recorded in [docs/decisions](docs/decisions).
+I framed the question, wrote the keyword list, chose the method and wrote the findings. Decisions are recorded in [docs/decisions](docs/decisions).
 
 ## Run it yourself
 
